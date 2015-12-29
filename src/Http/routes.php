@@ -9,7 +9,7 @@ Route::group(['namespace' => 'Greabock\Console\Http\Controllers'], function(){
     | Register action returning console view.
     |
     */
-    get('console', [
+    Route::get('console', [
         'as' =>  'greabock.console.console',
         'uses' => 'ConsoleController@getIndex',
     ]);
@@ -21,7 +21,7 @@ Route::group(['namespace' => 'Greabock\Console\Http\Controllers'], function(){
     | Register action executing code.
     |
     */
-    post('console', [
+    Route::post('console', [
         'as' =>  'greabock.console.console',
         'uses' => 'ConsoleController@postIndex',
     ]);
